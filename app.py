@@ -8,6 +8,7 @@ pipe = pipeline("text-classification", model="./roberta-base-go_emotions")
 app = Flask(__name__)
 
 
+
 @app.route('/readability')
 def readability():
     text = request.args.get('text')
