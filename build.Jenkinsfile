@@ -1,6 +1,7 @@
 pipeline {
     agent {
         docker {
+            label 'general'
             image '933060838752.dkr.ecr.eu-north-1.amazonaws.com/alonit_jenkins_agent:0.1'
             args  '--user root -v /var/run/docker.sock:/var/run/docker.sock'
         }
