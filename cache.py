@@ -1,7 +1,7 @@
 from collections import OrderedDict
 
 cache = OrderedDict()
-cache_max_size = 500
+cache_max_size = 540
 
 
 def get_from_cache(key):
